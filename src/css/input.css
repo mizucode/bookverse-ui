@@ -1,0 +1,23 @@
+@tailwind base;
+body {
+	@apply font-inter;
+}
+@tailwind components;
+@tailwind utilities;
+
+/* Homepage */
+
+@layer components {
+	.homepage-header {
+		@apply bg-dasar;
+	}
+	.active {
+		@apply top-0;
+	}
+
+	.nonactive {
+		@apply -top-[32rem];
+	}
+}
+
+/* End Homepage */
