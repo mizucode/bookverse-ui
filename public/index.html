@@ -161,6 +161,11 @@
 				navbarNav.classList.toggle("nonactive");
 				overlay.classList.toggle("block");
 				overlay.classList.toggle("hidden");
+
+				window.addEventListener("scroll", function (event) {
+					event.preventDefault();
+					window.scrollTo(0, 0);
+				});
 			};
 
 			hamburgerOpen.addEventListener("click", toggleMenu);
