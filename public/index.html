@@ -21,6 +21,8 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 		<!-- Stylesheet -->
 		<link href="./css/style.css" rel="stylesheet" />
 		<link
@@ -108,10 +110,12 @@
 			</div>
 		</header>
 
+		<!-- End Header -->
+
 		<!-- Header -->
 		<section
 			id="home"
-			class="pt-[4rem] bg-dasar w-full h-screen mb-96 overflow-hidden"
+			class="pt-[4rem] bg-dasar w-full h-screen overflow-hidden"
 		>
 			<div class="">
 				<div
@@ -150,6 +154,83 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- End Hero -->
+
+		<!-- Section 1 -->
+		<section class="mb-20 pt-16">
+			<div class="container">
+				<div>
+					<div data-aos="fade" data-aos-duration="2000">
+						<img src="../img/book-icon.png" alt="" />
+					</div>
+					<div data-aos="fade-right" data-aos-duration="1500">
+						<h1 class="font-bold text-4xl">Kenapa harus membaca buku?</h1>
+						<p class="text-text-abu text-lg font-medium mt-2">
+							Membaca buku adalah kegiatan yang menawarkan pintu menuju dunia
+							pengetahuan yang tak terbatas. Dalam buku, terdapat fakta-fakta
+							yang mencerahkan dan memperluas wawasan kita. Dengan membaca, kita
+							dapat menjelajahi peradaban kuno, memahami berbagai perspektif,
+							dan memperdalam pemahaman tentang dunia di sekitar kita.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Section 1 -->
+
+		<!-- Section 2 -->
+		<section class="mb-96">
+			<div class="container">
+				<div>
+					<div class="flex flex-wrap gap-5">
+						<div
+							class="w-full h-[10rem] rounded-xl bg-gradient-to-tr from-transparent to-pink-500"
+						>
+							<div
+								class="w-full h-full flex justify-center items-center flex-col text-white"
+							>
+								<i class="fa-regular fa-face-smile text-4xl"></i>
+								<h1 class="font-medium text-2xl mt-4">Pengetahuan</h1>
+							</div>
+						</div>
+						<div
+							class="w-full h-[10rem] rounded-xl bg-gradient-to-r from-yellow-400 to-amber-200"
+						></div>
+						<div
+							class="w-full h-[10rem] rounded-xl bg-gradient-to-r from-sky-400 to-purple-300"
+						></div>
+						<div
+							class="w-full h-[10rem] rounded-xl bg-gradient-to-br from-red-500 to-red-200"
+						></div>
+					</div>
+					<div data-aos="fade-right" data-aos-duration="1500" class="mt-8">
+						<h1 class="font-bold text-4xl">Kenapa harus membaca buku?</h1>
+						<p class="text-text-abu text-lg font-medium mt-2">
+							Membaca buku membantu meningkatkan wawasan dan pemahaman tentang
+							berbagai topik, mulai dari ilmu pengetahuan, sejarah, sastra,
+							hingga budaya dan seni.
+						</p>
+						<p class="text-text-abu text-lg font-medium mt-2">
+							Membaca buku merangsang perkembangan kognitif kita.Ini membantu
+							meningkatkan kemampuan berpikir kritis, logika, serta kemampuan
+							berbicara dan menulis.
+						</p>
+						<p class="text-text-abu text-lg font-medium mt-2">
+							Buku membantu membangkitkan imajinasi dan kreativitas kita. Ketika
+							membaca, kita seringkali membayangkan dunia dan karakter yang ada
+							dalam buku tersebut.
+						</p>
+						<p class="text-text-abu text-lg font-medium mt-2">
+							Membaca buku juga dapat menjadi cara yang baik untuk bersantai dan
+							menghibur diri. Buku juga dapat menjadi teman yang setia dalam
+							waktu luang dan mengisi kekosongan.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Section 2 -->
 
 		<script>
 			const navbarNav = document.querySelector("#navbar-menu");
@@ -190,6 +271,11 @@
 					navbarUl.classList.replace("lg:text-black", "lg:text-white");
 				}
 			});
+		</script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init();
 		</script>
 	</body>
 </html>

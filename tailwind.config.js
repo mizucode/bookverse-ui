@@ -13,6 +13,7 @@ module.exports = {
 			colors: {
 				dasar: "#FF78C4",
 				ungu: "#E1AEFF",
+				"text-abu": "#535F6C",
 			},
 		},
 	},
