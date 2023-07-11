@@ -35,21 +35,24 @@
 		<!-- Title -->
 		<title>BookVerse</title>
 	</head>
-	<body class="bg-rose-600">
+	<body>
 		<header class="homepage-header">
-			<div class="py-2 lg:py-4 flex justify-between items-center px-4">
-				<div class="flex justify-between items-center text-white">
+			<div class="py-4 flex justify-between items-center px-4 lg:px-6">
+				<div class="flex justify-between items-center text-white" id="logo">
 					<h1 class="font-bold text-2xl lg:text-4xl">
 						<a href="#">BookVerse.</a>
 					</h1>
 				</div>
 				<div class="lg:hidden">
 					<button id="hamburger-open" onclick="">
-						<i class="fa-solid fa-bars text-2xl text-white"></i>
+						<i
+							class="fa-solid fa-bars text-2xl text-white"
+							id="hamburger-open-bars"
+						></i>
 					</button>
 				</div>
 				<nav
-					class="absolute lg:static lg:flex justify-between items-center lg:top-0 w-full lg:w-auto h-[25rem] lg:h-auto nonactive left-0 bg-white lg:bg-transparent mx-auto lg:mx-0 transition-all lg:transition-none ease-in-out duration-300"
+					class="absolute z-50 lg:static lg:flex justify-between items-center lg:top-0 w-full lg:w-auto h-[25rem] lg:h-auto nonactive left-0 bg-white lg:bg-transparent mx-auto lg:mx-0 transition-all lg:transition-none ease-in-out duration-300"
 					id="navbar-menu"
 				>
 					<div
@@ -58,6 +61,7 @@
 						<h3 class="opacity-40 lg:hidden">Perpustakaan BookVerse</h3>
 						<ul
 							class="mt-2 lg:flex justify-around lg:justify-between gap-8 lg:gap-8 items-center lg:text-white lg:text-xl"
+							id="navbar-ul"
 						>
 							<li class="">
 								<a href="" class="flex justify-between items-center"
@@ -87,11 +91,12 @@
 								></a>
 							</li>
 						</ul>
-						<div
+						<a
+							href=""
 							class="bg-ungu w-full mt-12 lg:mt-0 lg:px-8 hover:bg-purple-300 rounded-md flex justify-center"
 						>
-							<a href="" class="py-2">Login</a>
-						</div>
+							<span class="py-2">Login</span>
+						</a>
 
 						<button type="button" id="hamburger-close" class="lg:hidden">
 							<i class="fa-solid fa-xmark absolute top-6 text-xl right-8"></i>
@@ -100,53 +105,43 @@
 				</nav>
 
 				<div
-					class="w-full lg:hidden h-screen -z-50 absolute bg-black opacity-50 hidden top-0 left-0 transition-all duration-300 ease-in-out"
+					class="w-full lg:hidden h-screen z-40 absolute bg-black opacity-50 hidden top-0 left-0 transition-all duration-300 ease-in-out"
 					id="overlay"
 				></div>
 			</div>
 		</header>
 
-		<script>
-			const navbarNav = document.querySelector("#navbar-menu");
-			const hamburgerOpen = document.querySelector("#hamburger-open");
-			const hamburgerClose = document.querySelector("#hamburger-close");
-			const overlay = document.querySelector("#overlay");
+		<section id="home" class="pt-[4rem] lg:pt-28 bg-dasar h-screen mb-96">
+			<div class="container">
+				<div
+					class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-center lg:px-24"
+				>
+					<div class="w-full lg:px-4">
+						<h1 class="text-3xl lg:text-6xl font-bold lg:text-start text-white">
+							Into the Book-Verse
+							<span class="block font-semibold text-niger text-xl my-2"
+								>Buku adalah portal magis yang membawa kita ke dunia yang baru
+								dan menakjubkan, di mana semua mungkin.</span
+							>
+						</h1>
+						<div class="mt-8">
+							<a
+								href=""
+								class="text-dasar bg-white hover:bg-slate-50 px-4 py-2 text-center rounded-full"
+								>Baca Buku<i class="fa-solid fa-angle-right ml-5 text-sm"></i
+							></a>
+						</div>
+					</div>
 
-			const toggleMenu = () => {
-				hamburgerOpen.classList.toggle("active");
-				hamburgerOpen.classList.toggle("nonactive");
-				navbarNav.classList.toggle("active");
-				navbarNav.classList.toggle("nonactive");
-				overlay.classList.toggle("block");
-				overlay.classList.toggle("hidden");
-			};
+					<div class="w-full self-end px-4">
+						<div class="relative mt-10 lg:mt-9 lg:right-0">
+							<img src="../img/hero.png" class="mx-auto" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-			hamburgerOpen.addEventListener("click", toggleMenu);
-			hamburgerClose.addEventListener("click", toggleMenu);
-		</script>
-
-		<!-- <script>
-			// Membuka Menu
-			const navbarNav = document.querySelector("#navbar-menu");
-			const hamburgerOpen = document.querySelector("#hamburger-open");
-			const hamburgerClose = document.querySelector("#hamburger-close");
-			const overlay = document.querySelector("#overlay");
-			// Aksi Membuka Menu
-			hamburgerOpen.addEventListener("click", function () {
-				hamburgerOpen.classList.toggle("active");
-				navbarNav.classList.remove("nonactive");
-				navbarNav.classList.add("active");
-				overlay.classList.remove("hidden");
-				overlay.classList.add("block");
-			});
-
-			hamburgerClose.addEventListener("click", function () {
-				hamburgerOpen.classList.toggle("nonactive");
-				navbarNav.classList.remove("active");
-				navbarNav.classList.add("nonactive");
-				overlay.classList.remove("block");
-				overlay.classList.add("hidden");
-			});
-		</script> -->
+		<script src="../src/js/index.js"></script>
 	</body>
 </html>

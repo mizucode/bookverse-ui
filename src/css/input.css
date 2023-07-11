@@ -2,6 +2,11 @@
 body {
 	@apply font-inter;
 }
+
+.navbar-fixed {
+	@apply fixed w-full z-10 bg-white shadow-md;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -9,7 +14,7 @@ body {
 
 @layer components {
 	.homepage-header {
-		@apply bg-dasar;
+		@apply bg-dasar transition duration-300 ease-in-out;
 	}
 	.active {
 		@apply top-0;
