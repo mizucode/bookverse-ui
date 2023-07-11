@@ -647,6 +647,10 @@ body {
   width: 100%;
 }
 
+.w-screen {
+  width: 100vw;
+}
+
 .scale-150 {
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -675,6 +679,14 @@ body {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {

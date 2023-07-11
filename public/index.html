@@ -102,14 +102,17 @@
 					</div>
 				</nav>
 				<div
-					class="w-full lg:hidden h-screen z-40 absolute bg-black opacity-50 hidden top-0 left-0 transition-all duration-300 ease-in-out"
+					class="w-full overflow-auto lg:hidden h-screen z-40 absolute bg-black opacity-50 hidden top-0 left-0 transition-all duration-300 ease-in-out"
 					id="overlay"
 				></div>
 			</div>
 		</header>
 
 		<!-- Header -->
-		<section id="home" class="pt-[4rem] bg-dasar h-screen mb-96">
+		<section
+			id="home"
+			class="pt-[4rem] bg-dasar w-full h-screen mb-96 overflow-hidden"
+		>
 			<div class="">
 				<div
 					class="flex flex-wrap lg:flex-nowrap justify-center items-center lg:px-24 px-4 md:px-6"
@@ -161,11 +164,6 @@
 				navbarNav.classList.toggle("nonactive");
 				overlay.classList.toggle("block");
 				overlay.classList.toggle("hidden");
-
-				window.addEventListener("scroll", function (event) {
-					event.preventDefault();
-					window.scrollTo(0, 0);
-				});
 			};
 
 			hamburgerOpen.addEventListener("click", toggleMenu);
