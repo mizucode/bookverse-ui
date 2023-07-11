@@ -38,14 +38,14 @@
 		<header class="homepage-header">
 			<div class="py-4 flex justify-between items-center px-4 lg:px-6">
 				<div class="flex justify-between items-center text-white" id="logo">
-					<h1 class="font-bold text-2xl lg:text-4xl">
+					<h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">
 						<a href="#">BookVerse.</a>
 					</h1>
 				</div>
 				<div class="lg:hidden">
 					<button id="hamburger-open" onclick="">
 						<i
-							class="fa-solid fa-bars text-2xl text-white"
+							class="fa-solid fa-bars text-2xl md:text-3xl text-white"
 							id="hamburger-open-bars"
 						></i>
 					</button>
@@ -107,15 +107,20 @@
 				></div>
 			</div>
 		</header>
-		<section id="home" class="pt-[4rem] lg:pt-28 bg-dasar h-screen mb-96">
-			<div class="container">
+
+		<!-- Header -->
+		<section id="home" class="pt-[4rem] bg-dasar h-screen mb-96">
+			<div class="">
 				<div
-					class="flex flex-wrap lg:flex-nowrap lg:flex-row justify-center lg:px-24"
+					class="flex flex-wrap lg:flex-nowrap justify-center items-center lg:px-24 px-4 md:px-6"
 				>
 					<div class="w-full lg:px-4">
-						<h1 class="text-3xl lg:text-6xl font-bold lg:text-start text-white">
+						<h1
+							class="text-3xl md:text-6xl font-bold lg:text-start text-white lg:whitespace-nowrap"
+						>
 							Into the Book-Verse
-							<span class="block font-semibold text-niger text-xl my-2"
+							<span
+								class="block font-semibold text-niger text-xl md:text-3xl lg:text-2xl my-2 lg:whitespace-normal"
 								>Buku adalah portal magis yang membawa kita ke dunia yang baru
 								dan menakjubkan, di mana semua mungkin.</span
 							>
@@ -123,15 +128,21 @@
 						<div class="mt-8">
 							<a
 								href=""
-								class="text-dasar bg-white hover:bg-slate-50 px-4 py-2 text-center rounded-full"
-								>Baca Buku<i class="fa-solid fa-angle-right ml-5 text-sm"></i
+								class="text-dasar bg-white hover:bg-slate-50 px-4 py-2 md:text-2xl text-center rounded-full"
+								>Baca Buku<i
+									class="fa-solid fa-angle-right ml-5 text-sm md:text-xl"
+								></i
 							></a>
 						</div>
 					</div>
-					<div class="w-full self-end px-4">
-						<div class="relative mt-10 lg:mt-9 lg:right-0">
-							<img src="../img/hero.png" class="mx-auto" alt="" />
-						</div>
+					<div
+						class="w-full h-full mx-auto pt-6 lg:pt-0 mt-20 md:mt-20 lg:mt-0 scale-150 lg:scale-100 pr-2 lg:pr-0"
+					>
+						<img
+							src="../img/hero.png"
+							class="w-full h-full object-cover"
+							alt=""
+						/>
 					</div>
 				</div>
 			</div>
