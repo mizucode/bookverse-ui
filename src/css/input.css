@@ -4,7 +4,7 @@ body {
 }
 
 .navbar-fixed {
-	@apply fixed w-full z-10 bg-white shadow-md;
+	@apply fixed w-full z-10 bg-white shadow-md transition duration-300 ease-in-out;
 }
 
 @tailwind components;

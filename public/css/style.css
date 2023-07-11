@@ -535,6 +535,11 @@ body {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -585,10 +590,6 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.active {
-  top: 0px;
-}
-
 .nonactive {
   top: -32rem;
 }
@@ -617,24 +618,12 @@ body {
   top: 1.5rem;
 }
 
-.top-\[60rem\] {
-  top: 60rem;
-}
-
-.top-\[40rem\] {
-  top: 40rem;
-}
-
 .z-40 {
   z-index: 40;
 }
 
 .z-50 {
   z-index: 50;
-}
-
-.z-\[999\] {
-  z-index: 999;
 }
 
 .mx-auto {
@@ -683,16 +672,20 @@ body {
   display: none;
 }
 
-.h-\[40rem\] {
-  height: 40rem;
+.h-\[25rem\] {
+  height: 25rem;
 }
 
 .h-screen {
   height: 100vh;
 }
 
-.h-\[25rem\] {
-  height: 25rem;
+.h-full {
+  height: 100%;
+}
+
+.h-\[100rem\] {
+  height: 100rem;
 }
 
 .h-\[50rem\] {
@@ -703,16 +696,56 @@ body {
   height: 80rem;
 }
 
-.h-\[60rem\] {
-  height: 60rem;
+.h-\[40rem\] {
+  height: 40rem;
 }
 
-.h-\[65rem\] {
-  height: 65rem;
+.h-\[30rem\] {
+  height: 30rem;
+}
+
+.h-\[20rem\] {
+  height: 20rem;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-\[30rem\] {
+  width: 30rem;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[100rem\] {
+  width: 100rem;
+}
+
+.w-\[50rem\] {
+  width: 50rem;
+}
+
+.w-\[80rem\] {
+  width: 80rem;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
+}
+
+.w-\[20rem\] {
+  width: 20rem;
+}
+
+.w-\[25rem\] {
+  width: 25rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .flex-wrap {
@@ -771,6 +804,26 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -791,32 +844,21 @@ body {
   padding-bottom: 1rem;
 }
 
-.pt-2 {
-  padding-top: 0.5rem;
-}
-
-.pt-\[20rem\] {
-  padding-top: 20rem;
-}
-
-.pt-\[4rem\] {
-  padding-top: 4rem;
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .pt-16 {
   padding-top: 4rem;
 }
 
-.pt-\[30rem\] {
-  padding-top: 30rem;
+.pt-2 {
+  padding-top: 0.5rem;
 }
 
-.pt-\[60rem\] {
-  padding-top: 60rem;
-}
-
-.pt-\[40rem\] {
-  padding-top: 40rem;
+.pt-\[6rem\] {
+  padding-top: 6rem;
 }
 
 .text-center {
