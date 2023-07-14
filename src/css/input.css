@@ -24,7 +24,7 @@ body {
 		@apply -top-[62rem] transition duration-300 ease-in-out;
 	}
 	.gridlayout {
-		@apply h-40 rounded-md bg-white relative;
+		@apply h-48 rounded-md bg-white relative;
 	}
 	.gridlayoutbox {
 		@apply absolute w-10 h-10 top-4 left-4 rounded-full flex justify-center items-center;
