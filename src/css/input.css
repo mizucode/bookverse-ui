@@ -29,6 +29,15 @@ body {
 	.gridlayoutbox {
 		@apply absolute w-10 h-10 md:w-16 md:h-16 top-4 left-4 rounded-full flex justify-center items-center;
 	}
+	.gridmain {
+		@apply mt-[55%] md:mt-[45%] lg:mt-[40%];
+	}
+	.gridmaintitle {
+		@apply font-bold lg:text-xl md:text-3xl;
+	}
+	.gridmaintext {
+		@apply text-xs lg:text-sm md:text-xl;
+	}
 }
 
 /* End Homepage */

@@ -644,6 +644,59 @@ body {
   }
 }
 
+.gridmain {
+  margin-top: 55%;
+}
+
+@media (min-width: 768px) {
+  .gridmain {
+    margin-top: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridmain {
+    margin-top: 40%;
+  }
+}
+
+.gridmaintitle {
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .gridmaintitle {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridmaintitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+.gridmaintext {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .gridmaintext {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridmaintext {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 .absolute {
   position: absolute;
 }
@@ -732,10 +785,6 @@ body {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-\[55\%\] {
-  margin-top: 55%;
 }
 
 .block {
@@ -1078,11 +1127,6 @@ body {
   line-height: 1.75rem;
 }
 
-.text-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -1217,12 +1261,8 @@ body {
     margin-top: 5rem;
   }
 
-  .md\:mt-\[30\%\] {
-    margin-top: 30%;
-  }
-
-  .md\:mt-\[35\%\] {
-    margin-top: 35%;
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:px-6 {
@@ -1253,6 +1293,16 @@ body {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 }
 
@@ -1292,10 +1342,6 @@ body {
 
   .lg\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .lg\:mt-\[40\%\] {
-    margin-top: 40%;
   }
 
   .lg\:flex {
@@ -1436,11 +1482,6 @@ body {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
-  }
-
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .lg\:text-xl {
