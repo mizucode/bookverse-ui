@@ -613,6 +613,18 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+@media (min-width: 768px) {
+  .gridlayout {
+    height: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridlayout {
+    height: 13rem;
+  }
+}
+
 .gridlayoutbox {
   position: absolute;
   top: 1rem;
@@ -623,6 +635,13 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 9999px;
+}
+
+@media (min-width: 768px) {
+  .gridlayoutbox {
+    height: 4rem;
+    width: 4rem;
+  }
 }
 
 .absolute {
@@ -713,14 +732,6 @@ body {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mt-\[45\%\] {
-  margin-top: 45%;
-}
-
-.mt-\[60\%\] {
-  margin-top: 60%;
 }
 
 .mt-\[55\%\] {
@@ -1206,6 +1217,14 @@ body {
     margin-top: 5rem;
   }
 
+  .md\:mt-\[30\%\] {
+    margin-top: 30%;
+  }
+
+  .md\:mt-\[35\%\] {
+    margin-top: 35%;
+  }
+
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -1219,6 +1238,11 @@ body {
   .md\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-6xl {
@@ -1237,13 +1261,29 @@ body {
     position: static;
   }
 
+  .lg\:-top-36 {
+    top: -9rem;
+  }
+
+  .lg\:left-8 {
+    left: 2rem;
+  }
+
   .lg\:top-0 {
     top: 0px;
+  }
+
+  .lg\:top-12 {
+    top: 3rem;
   }
 
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .lg\:mt-0 {
@@ -1252,6 +1292,10 @@ body {
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mt-\[40\%\] {
+    margin-top: 40%;
   }
 
   .lg\:flex {
@@ -1270,6 +1314,14 @@ body {
     height: auto;
   }
 
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:w-64 {
+    width: 16rem;
+  }
+
   .lg\:w-\[192rem\] {
     width: 192rem;
   }
@@ -1284,12 +1336,20 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .lg\:flex-nowrap {
     flex-wrap: nowrap;
   }
 
   .lg\:justify-between {
     justify-content: space-between;
+  }
+
+  .lg\:justify-evenly {
+    justify-content: space-evenly;
   }
 
   .lg\:gap-8 {
@@ -1333,6 +1393,11 @@ body {
     padding-right: 2rem;
   }
 
+  .lg\:py-32 {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
   .lg\:pr-0 {
     padding-right: 0px;
   }
@@ -1363,9 +1428,19 @@ body {
     line-height: 2.5rem;
   }
 
-  .lg\:text-5xl {
-    font-size: 3rem;
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-xl {
