@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Font Family -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<!-- Stylesheet -->
+		<link href="./css/style.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<!-- Title -->
+		<title>BookVerse</title>
+	</head>
+	<body>
+		<header class="homepage-header">
+			<div class="py-4 flex justify-between items-center px-4 lg:px-6">
+				<div class="flex justify-between items-center text-white" id="logo">
+					<h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">
+						<a href="#">BookVerse.</a>
+					</h1>
+				</div>
+				<div class="lg:hidden">
+					<button id="hamburger-open" onclick="">
+						<i
+							class="fa-solid fa-bars text-2xl md:text-3xl text-white"
+							id="hamburger-open-bars"
+						></i>
+					</button>
+				</div>
+				<nav
+					class="absolute z-50 lg:static lg:flex justify-between items-center lg:top-0 w-full lg:w-auto h-[25rem] lg:h-auto nonactive left-0 bg-white lg:bg-transparent mx-auto lg:mx-0 transition-all duration-300 ease-in-out"
+					id="navbar-menu"
+				>
+					<div
+						class="px-8 lg:px-0 pt-16 lg:pt-0 font-medium text-black lg:flex justify-center gap-8 items-center"
+					>
+						<h3 class="opacity-40 lg:hidden">Perpustakaan BookVerse</h3>
+						<ul
+							class="mt-2 lg:flex justify-around lg:justify-between gap-8 lg:gap-8 items-center lg:text-white lg:text-xl"
+							id="navbar-ul"
+						>
+							<li class="">
+								<a href="" class="flex justify-between items-center"
+									>Homepage <i class="fa-solid fa-right-long pt-2 lg:hidden"></i
+								></a>
+							</li>
+							<li class="mt-2 lg:mt-0">
+								<a href="" class="flex justify-between items-center"
+									>Koleksi <i class="fa-solid fa-right-long pt-2 lg:hidden"></i
+								></a>
+							</li>
+							<li class="mt-2 lg:mt-0">
+								<a href="" class="flex justify-between items-center"
+									>Repositori
+									<i class="fa-solid fa-right-long pt-2 lg:hidden"></i
+								></a>
+							</li>
+							<li class="mt-2 lg:mt-0">
+								<a href="" class="flex justify-between items-center"
+									>Rekomendasi
+									<i class="fa-solid fa-right-long pt-2 lg:hidden"></i
+								></a>
+							</li>
+							<li class="mt-2 lg:mt-0">
+								<a href="" class="flex justify-between items-center"
+									>Link <i class="fa-solid fa-right-long pt-2 lg:hidden"></i
+								></a>
+							</li>
+						</ul>
+						<a
+							href=""
+							class="bg-ungu w-full mt-12 lg:mt-0 lg:px-8 hover:bg-purple-300 rounded-md flex justify-center"
+						>
+							<span class="py-2">Login</span>
+						</a>
+						<button type="button" id="hamburger-close" class="lg:hidden">
+							<i class="fa-solid fa-xmark absolute top-6 text-xl right-8"></i>
+						</button>
+					</div>
+				</nav>
+				<div
+					class="w-full overflow-auto lg:hidden h-screen z-40 absolute bg-black opacity-50 hidden top-0 left-0 transition-all duration-300 ease-in-out"
+					id="overlay"
+				></div>
+			</div>
+		</header>
+
+		<!-- Section 1 -->
+		<section class="bg-dasar py-32"></section>
+		<section class="-mt-48">
+			<div class="container">
+				<div>
+					<h1 class="font-bold text-2xl text-white">Baru di-update</h1>
+					<p class="font-bold text-base text-white">
+						Temukan keajaiban pengetahuan terbaru dalam buku yang diperbarui ini
+					</p>
+				</div>
+				<div class="grid grid-cols-1 grid-rows-3 gap-4 mt-4">
+					<div class="bg-gray-200 rounded-md overflow-hidden flex">
+						<div>
+							<div class="relative w-40 h-full">
+								<div class="z-[0]">
+									<img src="../img/moshoku.jpg" alt="" class="object-cover" />
+								</div>
+								<div
+									class="absolute bottom-0 w-full h-16 p-2 pt-4 bg-black bg-opacity-70"
+								>
+									<h1
+										class="font-semibold text-xs text-white truncate overflow-hidden"
+									>
+										Moshoku Tensei : Jobless Reincarnationdadawd
+									</h1>
+									<h2 class="font-semibold text-[0.5rem] text-orange-500">
+										Rifujin na Magonote
+									</h2>
+								</div>
+							</div>
+						</div>
+						<div class="w-full h-full">
+							<main class="container pt-4 w-full h-4">
+								<p
+									class="overflow-hidden text-ellipsis w-full h-40 text-xs font-medium text-slate-500 leading-tight"
+								>
+									Mengisahkan tentang seorang pria pengangguran dan putus asa
+									yang bereinkarnasi ke dunia fantasi sambil mempertahankan
+									ingatannya, ia bertekad untuk menjalani kehidupan barunya
+									tanpa penyesalan.
+								</p>
+								<div class="flex gap-2 mt-2">
+									<a
+										href=""
+										class="bg-orange-400 px-6 py-1 text-xs font-semibold text-[10px] text-white rounded-full hover:bg-orange-400"
+										>Novel</a
+									>
+									<a
+										href=""
+										class="bg-orange-400 px-6 py-1 text-xs font-semibold text-[10px] text-white rounded-full"
+										>Fantasy</a
+									>
+								</div>
+							</main>
+						</div>
+					</div>
+					<div class="bg-gray-200 p-4">Baris 1, Kolom 2</div>
+					<div class="bg-gray-200 p-4">Baris 2, Kolom 1</div>
+					<div class="bg-gray-200 p-4">Baris 2, Kolom 2</div>
+					<div class="bg-gray-200 p-4">Baris 3, Kolom 1</div>
+					<div class="bg-gray-200 p-4">Baris 3, Kolom 2</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Section 1 -->
+
+		<script src="../src/js/index.js"></script>
+	</body>
+</html>
